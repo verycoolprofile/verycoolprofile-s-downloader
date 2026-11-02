@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru" data-theme="youtube">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>verycoolprofile's downloader</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">YT</div>
+            <div class="title-wrapper">
+                <h1 data-i18n="title">verycoolprofile's downloader</h1>
+                <div class="subtitle" data-i18n="subtitle">Скачивай видео и аудио с YouTube</div>
+            </div>
+            <div class="controls">
+                <button id="btnTheme" class="ctrl-btn" data-i18n="theme">Тема</button>
+                <button id="btnLang" class="ctrl-btn">RU</button>
+            </div>
+        </header>
+
+        <div class="format-group">
+            <label class="toggle active">
+                <input type="radio" name="format" value="mp3" checked>
+                <span data-i18n="audio">Аудио (MP3)</span>
+            </label>
+            <label class="toggle">
+                <input type="radio" name="format" value="mp4">
+                <span data-i18n="video">Видео (MP4)</span>
+            </label>
+        </div>
+
+        <div class="field">
+            <label for="quality" data-i18n="quality">Качество</label>
+            <select id="quality"></select>
+        </div>
+
+        <button id="btnDownload" class="btn-download" data-i18n="download">Скачать</button>
+
+        <p id="status" class="info" data-i18n="idle"></p>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
